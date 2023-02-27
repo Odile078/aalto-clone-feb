@@ -38,14 +38,14 @@ const Header = () => {
           <Image
             width={98}
             height={69}
-            src={questionLogo}
+            src="/images/question-logo.png"
             alt="logo"
             className={`transition-all duration-300 group-hover:hidden ${
               pageIsScrolled ? "h-8 w-10" : ""
             }`}
           />
           <Image
-            src={commaLogo}
+            src="/images/comma-logo.png"
             alt="logo"
             width={98}
             height={69}
