@@ -200,14 +200,9 @@ const Explore = () => {
                   //   src={card1}
                   alt="card 1"
                   className="object-cover object-center h-40"
-                  srcset="https://www.aalto.fi/sites/g/files/flghsv161/files/styles/o_280w_ah_d/public/2021-11/Aalto_University_Quantum_Exhibition_Dipoli_16-10-2019_photo_Mikko_Raskinen_001.jpg?itok=blwQPDvC 280w,
-                  https://www.aalto.fi/sites/g/files/flghsv161/files/styles/o_402w_ah_d/public/2021-11/Aalto_University_Quantum_Exhibition_Dipoli_16-10-2019_photo_Mikko_Raskinen_001.jpg?itok=oTlYOy3_ 402w,
-                  https://www.aalto.fi/sites/g/files/flghsv161/files/styles/o_512w_ah_d/public/2021-11/Aalto_University_Quantum_Exhibition_Dipoli_16-10-2019_photo_Mikko_Raskinen_001.jpg?itok=TquHOA6G 512w, 
-                  https://www.aalto.fi/sites/g/files/flghsv161/files/styles/o_682w_ah_d/public/2021-11/Aalto_University_Quantum_Exhibition_Dipoli_16-10-2019_photo_Mikko_Raskinen_001.jpg?itok=thZFiyFv 682w,
-                  https://www.aalto.fi/sites/g/files/flghsv161/files/styles/o_1074w_ah_d/public/2021-11/Aalto_University_Quantum_Exhibition_Dipoli_16-10-2019_photo_Mikko_Raskinen_001.jpg?itok=Mpfr0565 1074w,
-                  https://www.aalto.fi/sites/g/files/flghsv161/files/styles/o_1280w_ah_d/public/2021-11/Aalto_University_Quantum_Exhibition_Dipoli_16-10-2019_photo_Mikko_Raskinen_001.jpg?itok=2OhYVT6B 1280w"
-                  media="all"
-                  type="image/jpeg"
+                  src="/images/explore-last-1-small.jpeg"
+                  width={682}
+                  height={455}
                 />
               ),
               description:
@@ -219,14 +214,9 @@ const Explore = () => {
                   //   src={card1}
                   alt="card 1"
                   className="object-cover object-center h-40"
-                  srcset="https://www.aalto.fi/sites/g/files/flghsv161/files/styles/o_280w_ah_d/public/2021-11/Aalto_University_Quantum_Exhibition_Dipoli_16-10-2019_photo_Mikko_Raskinen_001.jpg?itok=blwQPDvC 280w,
-                    https://www.aalto.fi/sites/g/files/flghsv161/files/styles/o_402w_ah_d/public/2021-11/Aalto_University_Quantum_Exhibition_Dipoli_16-10-2019_photo_Mikko_Raskinen_001.jpg?itok=oTlYOy3_ 402w,
-                    https://www.aalto.fi/sites/g/files/flghsv161/files/styles/o_512w_ah_d/public/2021-11/Aalto_University_Quantum_Exhibition_Dipoli_16-10-2019_photo_Mikko_Raskinen_001.jpg?itok=TquHOA6G 512w, 
-                    https://www.aalto.fi/sites/g/files/flghsv161/files/styles/o_682w_ah_d/public/2021-11/Aalto_University_Quantum_Exhibition_Dipoli_16-10-2019_photo_Mikko_Raskinen_001.jpg?itok=thZFiyFv 682w,
-                    https://www.aalto.fi/sites/g/files/flghsv161/files/styles/o_1074w_ah_d/public/2021-11/Aalto_University_Quantum_Exhibition_Dipoli_16-10-2019_photo_Mikko_Raskinen_001.jpg?itok=Mpfr0565 1074w,
-                    https://www.aalto.fi/sites/g/files/flghsv161/files/styles/o_1280w_ah_d/public/2021-11/Aalto_University_Quantum_Exhibition_Dipoli_16-10-2019_photo_Mikko_Raskinen_001.jpg?itok=2OhYVT6B 1280w"
-                  media="all"
-                  type="image/jpeg"
+                  src="/images/explore-last-1-small.jpeg"
+                  width={682}
+                  height={455}
                 />
               ),
               description:
@@ -238,14 +228,9 @@ const Explore = () => {
                   //   src={card1}
                   alt="card 1"
                   className="object-cover object-center h-40"
-                  srcset="https://www.aalto.fi/sites/g/files/flghsv161/files/styles/o_280w_ah_d/public/2021-11/Aalto_University_Quantum_Exhibition_Dipoli_16-10-2019_photo_Mikko_Raskinen_001.jpg?itok=blwQPDvC 280w,
-                    https://www.aalto.fi/sites/g/files/flghsv161/files/styles/o_402w_ah_d/public/2021-11/Aalto_University_Quantum_Exhibition_Dipoli_16-10-2019_photo_Mikko_Raskinen_001.jpg?itok=oTlYOy3_ 402w,
-                    https://www.aalto.fi/sites/g/files/flghsv161/files/styles/o_512w_ah_d/public/2021-11/Aalto_University_Quantum_Exhibition_Dipoli_16-10-2019_photo_Mikko_Raskinen_001.jpg?itok=TquHOA6G 512w, 
-                    https://www.aalto.fi/sites/g/files/flghsv161/files/styles/o_682w_ah_d/public/2021-11/Aalto_University_Quantum_Exhibition_Dipoli_16-10-2019_photo_Mikko_Raskinen_001.jpg?itok=thZFiyFv 682w,
-                    https://www.aalto.fi/sites/g/files/flghsv161/files/styles/o_1074w_ah_d/public/2021-11/Aalto_University_Quantum_Exhibition_Dipoli_16-10-2019_photo_Mikko_Raskinen_001.jpg?itok=Mpfr0565 1074w,
-                    https://www.aalto.fi/sites/g/files/flghsv161/files/styles/o_1280w_ah_d/public/2021-11/Aalto_University_Quantum_Exhibition_Dipoli_16-10-2019_photo_Mikko_Raskinen_001.jpg?itok=2OhYVT6B 1280w"
-                  media="all"
-                  type="image/jpeg"
+                  src="/images/explore-last-1-small.jpeg"
+                  width={682}
+                  height={455}
                 />
               ),
               description:
@@ -257,14 +242,9 @@ const Explore = () => {
                   //   src={card1}
                   alt="card 1"
                   className="object-cover object-center h-40"
-                  srcset="https://www.aalto.fi/sites/g/files/flghsv161/files/styles/o_280w_ah_d/public/2021-11/Aalto_University_Quantum_Exhibition_Dipoli_16-10-2019_photo_Mikko_Raskinen_001.jpg?itok=blwQPDvC 280w,
-                    https://www.aalto.fi/sites/g/files/flghsv161/files/styles/o_402w_ah_d/public/2021-11/Aalto_University_Quantum_Exhibition_Dipoli_16-10-2019_photo_Mikko_Raskinen_001.jpg?itok=oTlYOy3_ 402w,
-                    https://www.aalto.fi/sites/g/files/flghsv161/files/styles/o_512w_ah_d/public/2021-11/Aalto_University_Quantum_Exhibition_Dipoli_16-10-2019_photo_Mikko_Raskinen_001.jpg?itok=TquHOA6G 512w, 
-                    https://www.aalto.fi/sites/g/files/flghsv161/files/styles/o_682w_ah_d/public/2021-11/Aalto_University_Quantum_Exhibition_Dipoli_16-10-2019_photo_Mikko_Raskinen_001.jpg?itok=thZFiyFv 682w,
-                    https://www.aalto.fi/sites/g/files/flghsv161/files/styles/o_1074w_ah_d/public/2021-11/Aalto_University_Quantum_Exhibition_Dipoli_16-10-2019_photo_Mikko_Raskinen_001.jpg?itok=Mpfr0565 1074w,
-                    https://www.aalto.fi/sites/g/files/flghsv161/files/styles/o_1280w_ah_d/public/2021-11/Aalto_University_Quantum_Exhibition_Dipoli_16-10-2019_photo_Mikko_Raskinen_001.jpg?itok=2OhYVT6B 1280w"
-                  media="all"
-                  type="image/jpeg"
+                  src="/images/explore-last-1-small.jpeg"
+                  width={682}
+                  height={455}
                 />
               ),
               description:
@@ -276,14 +256,9 @@ const Explore = () => {
                   //   src={card1}
                   alt="card 1"
                   className="object-cover object-center h-40"
-                  srcset="https://www.aalto.fi/sites/g/files/flghsv161/files/styles/o_280w_ah_d/public/2021-11/Aalto_University_Quantum_Exhibition_Dipoli_16-10-2019_photo_Mikko_Raskinen_001.jpg?itok=blwQPDvC 280w,
-                    https://www.aalto.fi/sites/g/files/flghsv161/files/styles/o_402w_ah_d/public/2021-11/Aalto_University_Quantum_Exhibition_Dipoli_16-10-2019_photo_Mikko_Raskinen_001.jpg?itok=oTlYOy3_ 402w,
-                    https://www.aalto.fi/sites/g/files/flghsv161/files/styles/o_512w_ah_d/public/2021-11/Aalto_University_Quantum_Exhibition_Dipoli_16-10-2019_photo_Mikko_Raskinen_001.jpg?itok=TquHOA6G 512w, 
-                    https://www.aalto.fi/sites/g/files/flghsv161/files/styles/o_682w_ah_d/public/2021-11/Aalto_University_Quantum_Exhibition_Dipoli_16-10-2019_photo_Mikko_Raskinen_001.jpg?itok=thZFiyFv 682w,
-                    https://www.aalto.fi/sites/g/files/flghsv161/files/styles/o_1074w_ah_d/public/2021-11/Aalto_University_Quantum_Exhibition_Dipoli_16-10-2019_photo_Mikko_Raskinen_001.jpg?itok=Mpfr0565 1074w,
-                    https://www.aalto.fi/sites/g/files/flghsv161/files/styles/o_1280w_ah_d/public/2021-11/Aalto_University_Quantum_Exhibition_Dipoli_16-10-2019_photo_Mikko_Raskinen_001.jpg?itok=2OhYVT6B 1280w"
-                  media="all"
-                  type="image/jpeg"
+                  src="/images/explore-last-1-small.jpeg"
+                  width={682}
+                  height={455}
                 />
               ),
               description:
@@ -295,14 +270,9 @@ const Explore = () => {
                   //   src={card1}
                   alt="card 1"
                   className="object-cover object-center h-40"
-                  srcset="https://www.aalto.fi/sites/g/files/flghsv161/files/styles/o_280w_ah_d/public/2021-11/Aalto_University_Quantum_Exhibition_Dipoli_16-10-2019_photo_Mikko_Raskinen_001.jpg?itok=blwQPDvC 280w,
-                    https://www.aalto.fi/sites/g/files/flghsv161/files/styles/o_402w_ah_d/public/2021-11/Aalto_University_Quantum_Exhibition_Dipoli_16-10-2019_photo_Mikko_Raskinen_001.jpg?itok=oTlYOy3_ 402w,
-                    https://www.aalto.fi/sites/g/files/flghsv161/files/styles/o_512w_ah_d/public/2021-11/Aalto_University_Quantum_Exhibition_Dipoli_16-10-2019_photo_Mikko_Raskinen_001.jpg?itok=TquHOA6G 512w, 
-                    https://www.aalto.fi/sites/g/files/flghsv161/files/styles/o_682w_ah_d/public/2021-11/Aalto_University_Quantum_Exhibition_Dipoli_16-10-2019_photo_Mikko_Raskinen_001.jpg?itok=thZFiyFv 682w,
-                    https://www.aalto.fi/sites/g/files/flghsv161/files/styles/o_1074w_ah_d/public/2021-11/Aalto_University_Quantum_Exhibition_Dipoli_16-10-2019_photo_Mikko_Raskinen_001.jpg?itok=Mpfr0565 1074w,
-                    https://www.aalto.fi/sites/g/files/flghsv161/files/styles/o_1280w_ah_d/public/2021-11/Aalto_University_Quantum_Exhibition_Dipoli_16-10-2019_photo_Mikko_Raskinen_001.jpg?itok=2OhYVT6B 1280w"
-                  media="all"
-                  type="image/jpeg"
+                  src="/images/explore-last-1-small.jpeg"
+                  width={682}
+                  height={455}
                 />
               ),
               description:
@@ -314,14 +284,9 @@ const Explore = () => {
                   //   src={card1}
                   alt="card 1"
                   className="object-cover object-center h-40"
-                  srcset="https://www.aalto.fi/sites/g/files/flghsv161/files/styles/o_280w_ah_d/public/2021-11/Aalto_University_Quantum_Exhibition_Dipoli_16-10-2019_photo_Mikko_Raskinen_001.jpg?itok=blwQPDvC 280w,
-                    https://www.aalto.fi/sites/g/files/flghsv161/files/styles/o_402w_ah_d/public/2021-11/Aalto_University_Quantum_Exhibition_Dipoli_16-10-2019_photo_Mikko_Raskinen_001.jpg?itok=oTlYOy3_ 402w,
-                    https://www.aalto.fi/sites/g/files/flghsv161/files/styles/o_512w_ah_d/public/2021-11/Aalto_University_Quantum_Exhibition_Dipoli_16-10-2019_photo_Mikko_Raskinen_001.jpg?itok=TquHOA6G 512w, 
-                    https://www.aalto.fi/sites/g/files/flghsv161/files/styles/o_682w_ah_d/public/2021-11/Aalto_University_Quantum_Exhibition_Dipoli_16-10-2019_photo_Mikko_Raskinen_001.jpg?itok=thZFiyFv 682w,
-                    https://www.aalto.fi/sites/g/files/flghsv161/files/styles/o_1074w_ah_d/public/2021-11/Aalto_University_Quantum_Exhibition_Dipoli_16-10-2019_photo_Mikko_Raskinen_001.jpg?itok=Mpfr0565 1074w,
-                    https://www.aalto.fi/sites/g/files/flghsv161/files/styles/o_1280w_ah_d/public/2021-11/Aalto_University_Quantum_Exhibition_Dipoli_16-10-2019_photo_Mikko_Raskinen_001.jpg?itok=2OhYVT6B 1280w"
-                  media="all"
-                  type="image/jpeg"
+                  src="/images/explore-last-1-small.jpeg"
+                  width={682}
+                  height={455}
                 />
               ),
               description:
@@ -333,14 +298,9 @@ const Explore = () => {
                   //   src={card1}
                   alt="card 1"
                   className="object-cover object-center h-40"
-                  srcset="https://www.aalto.fi/sites/g/files/flghsv161/files/styles/o_280w_ah_d/public/2021-11/Aalto_University_Quantum_Exhibition_Dipoli_16-10-2019_photo_Mikko_Raskinen_001.jpg?itok=blwQPDvC 280w,
-                    https://www.aalto.fi/sites/g/files/flghsv161/files/styles/o_402w_ah_d/public/2021-11/Aalto_University_Quantum_Exhibition_Dipoli_16-10-2019_photo_Mikko_Raskinen_001.jpg?itok=oTlYOy3_ 402w,
-                    https://www.aalto.fi/sites/g/files/flghsv161/files/styles/o_512w_ah_d/public/2021-11/Aalto_University_Quantum_Exhibition_Dipoli_16-10-2019_photo_Mikko_Raskinen_001.jpg?itok=TquHOA6G 512w, 
-                    https://www.aalto.fi/sites/g/files/flghsv161/files/styles/o_682w_ah_d/public/2021-11/Aalto_University_Quantum_Exhibition_Dipoli_16-10-2019_photo_Mikko_Raskinen_001.jpg?itok=thZFiyFv 682w,
-                    https://www.aalto.fi/sites/g/files/flghsv161/files/styles/o_1074w_ah_d/public/2021-11/Aalto_University_Quantum_Exhibition_Dipoli_16-10-2019_photo_Mikko_Raskinen_001.jpg?itok=Mpfr0565 1074w,
-                    https://www.aalto.fi/sites/g/files/flghsv161/files/styles/o_1280w_ah_d/public/2021-11/Aalto_University_Quantum_Exhibition_Dipoli_16-10-2019_photo_Mikko_Raskinen_001.jpg?itok=2OhYVT6B 1280w"
-                  media="all"
-                  type="image/jpeg"
+                  src="/images/explore-last-1-small.jpeg"
+                  width={682}
+                  height={455}
                 />
               ),
               description:
