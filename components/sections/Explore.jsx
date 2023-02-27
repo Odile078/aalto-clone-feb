@@ -37,7 +37,7 @@ const Explore = () => {
             ))}
           </div>
         </div>
-        <div className="mt-6 space-y-10">
+        <div className="my-12 space-y-10">
           <h2 className="text-3xl font-semibold text-center">
             important-quicklinks
           </h2>
@@ -71,14 +71,14 @@ const Explore = () => {
             description="Scientific research and artistic activities are carried out at six schools and their departments and units."
           />
 
-          <div className="grid grid-cols-1 gap-2 md:grid-cols-4">
+          <div className="grid grid-cols-1 gap-2 md:grid-cols-2">
             {[
               {
                 img: (
                   <Image
                     src={exploreCard1}
                     alt="card 1"
-                    className="object-cover object-center h-40"
+                    className="order-last object-cover object-center h-40"
                   />
                 ),
                 title: "School of Arts, Design and Architecture",
@@ -89,7 +89,7 @@ const Explore = () => {
                   <Image
                     src={exploreCard1}
                     alt="card 1"
-                    className="object-cover object-center h-40"
+                    className="order-last object-cover object-center h-40"
                   />
                 ),
                 title: "School of Arts, Design and Architecture",
@@ -100,7 +100,7 @@ const Explore = () => {
                   <Image
                     src={exploreCard1}
                     alt="card 1"
-                    className="object-cover object-center h-40"
+                    className="order-last object-cover object-center h-40"
                   />
                 ),
                 title: "School of Arts, Design and Architecture",
@@ -111,14 +111,14 @@ const Explore = () => {
                   <Image
                     src={exploreCard1}
                     alt="card 1"
-                    className="object-cover object-center h-40"
+                    className="order-last object-cover object-center h-40"
                   />
                 ),
                 title: "School of Arts, Design and Architecture",
                 description: "The School of Arts, Design and Architecture...",
               },
             ].map((e, i) => (
-              <ContentCard key={i} {...e} />
+              <ContentCard key={i} {...e} flexed={true} />
             ))}
           </div>
         </div>

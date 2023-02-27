@@ -4,7 +4,7 @@ import { MdArrowBackIosNew, MdArrowForwardIos } from "react-icons/md";
 import MainWrapper from "../wrappers/MainWrapper";
 const Hero = () => {
   return (
-    <div className="flex flex-col ">
+    <div className="flex flex-col mt-20">
       <div>
         <Image
           src="/images/hero-2.jpeg"
@@ -16,11 +16,11 @@ const Hero = () => {
       </div>
       <div className="order-first bg-black xl:bg-transparent xl:order-last">
         <MainWrapper>
-          <div className="px-4 py-6 ml-6 space-y-5 text-white bg-black xl:-mt-40 xl:px-10 xl:-ml-10 lg:w-fit">
+          <div className="px-4 py-6 ml-6 space-y-5 text-white bg-black xl:-mt-40 xl:px-10 xl:-ml-10 max-[640px] lg:w-fit">
             <h2 className="text-2xl">
               Aalto student – New Student Guide is here to replace Into
             </h2>
-            <p>
+            <p className="text-base">
               The into.aalto.fi contents have been migrated to the Aalto.fi site
               with information and news for students.
             </p>
