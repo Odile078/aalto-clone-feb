@@ -6,8 +6,8 @@ import { BiMenu } from "react-icons/bi";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { BsArrowRight } from "react-icons/bs";
-import questionLogo from "../../public/images/question-logo.PNG";
-import commaLogo from "../../public/images/comma-logo.PNG";
+import questionLogo from "../../public/images/question-logo.png";
+import commaLogo from "../../public/images/comma-logo.png";
 import Image from "next/image";
 const Header = () => {
   const [pageIsScrolled, setPageIsScrolled] = useState(false);
