@@ -13,9 +13,16 @@ module.exports = {
   ],
   theme: {
     extend: {
-      fontFamily: {
-        sans: ["var(--font-nimbus)", ...fontFamily.sans],
+      colors: {
+        brandGray: {
+          DEFAULT: "#f1f1f1",
+          light: "#e3e3e3",
+        },
+        brandBlack: "#2d2d2d",
       },
+      // fontFamily: {
+      //   sans: ["var(--font-nimbus)", ...fontFamily.sans],
+      // },
     },
   },
   plugins: [],
