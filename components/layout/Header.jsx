@@ -27,8 +27,8 @@ const Header = () => {
     return () => (document.body.style.overflow = "scroll");
   }, [menuIsOpen]);
   return (
-    <header>
-      <div className="fixed z-30 flex justify-between w-full px-3 mx-auto bg-white border-b border-black max-w-7xl lg:px-20">
+    <header className="">
+      <div className="fixed z-30 flex justify-between w-full px-3 bg-white border-b border-black lg:px-20">
         <div
           className={`space-y-px transition-all duration-300 group ${
             pageIsScrolled ? "py-1" : "py-4"
@@ -48,7 +48,7 @@ const Header = () => {
             alt="logo"
             width={98}
             height={69}
-            className={`transition-all duration-300 hidden group-hover:block  ${
+            className={`transition-all duration-300 hidden group-hover:block ${
               pageIsScrolled ? "h-8 w-10" : ""
             }`}
           />
@@ -139,7 +139,7 @@ const Header = () => {
       {menuIsOpen ? (
         <section className="">
           <div className="fixed top-0 right-0 z-10 grid w-screen h-screen mx-auto bg-black bg-opacity-50 m ">
-            <div className="w-[80%] bg-white right-0 fixed">
+            <div className="w-[80%] 2xl:w-[40%] bg-white right-0 fixed">
               <div className="relative h-screen overflow-y-auto">
                 {/* <div
                   onClick={handleOpenMenu}
