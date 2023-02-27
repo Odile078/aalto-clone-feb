@@ -7,6 +7,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { BsArrowRight } from "react-icons/bs";
 import Image from "next/image";
+
 const Header = () => {
   const [pageIsScrolled, setPageIsScrolled] = useState(false);
   const [menuIsOpen, setMenuIsOpen] = useState(false);
