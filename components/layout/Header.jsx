@@ -53,15 +53,6 @@ const Header = () => {
               pageIsScrolled ? "h-8 w-10" : ""
             }`}
           />
-          {/* <p
-            className={` font-bold transition-all duration-700 ${
-              pageIsScrolled ? "text-base" : "text-5xl "
-            } `}
-          >
-            A<span className="group-hover:hidden">?</span>
-            <span className="hidden group-hover:inline-block">&quot;</span>
-          </p>
-          <p className="text-xs font-bold">Aalto university</p> */}
         </div>
         <nav className="flex gap-4">
           <ul className="items-center hidden gap-10 py-px lg:flex">
