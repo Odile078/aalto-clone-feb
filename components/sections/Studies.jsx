@@ -7,28 +7,16 @@ const Studies = () => {
   return (
     <div className="bg-brandGray">
       <MainWrapper>
-        <div className="py-10 space-y-6">
+        <div className="pb-[9.6rem] pt-[5.6rem] space-y-[5.6rem]">
           <SectionHeader title="Studies and courses open to all" />
-          <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
+          <div className="grid grid-cols-1 gap-5 md:grid-cols-3">
             {[
               {
                 img: (
                   <Image
                     src={study1}
                     alt="card 1"
-                    className="object-cover object-center h-40"
-                  />
-                ),
-                title: "Lifewide Learning(external link)",
-                description:
-                  "Select a solution that suits you, ranging from individual courses to programmes that are open for all.",
-              },
-              {
-                img: (
-                  <Image
-                    src={study1}
-                    alt="card 1"
-                    className="object-cover object-center h-40"
+                    className="object-cover object-center w-full h-[195px] group-hover:opacity-70"
                   />
                 ),
                 title: "Lifewide Learning",
@@ -40,10 +28,22 @@ const Studies = () => {
                   <Image
                     src={study1}
                     alt="card 1"
-                    className="object-cover object-center h-40"
+                    className="object-cover object-center w-full w-full h-[195px] group-hover:opacity-70"
                   />
                 ),
-                title: "Lifewide Learning(external link)",
+                title: "Lifewide Learning",
+                description:
+                  "Select a solution that suits you, ranging from individual courses to programmes that are open for all.",
+              },
+              {
+                img: (
+                  <Image
+                    src={study1}
+                    alt="card 1"
+                    className="object-cover object-center w-full h-[195px] group-hover:opacity-70"
+                  />
+                ),
+                title: "Lifewide Learning",
                 description:
                   "Select a solution that suits you, ranging from individual courses to programmes that are open for all.",
               },

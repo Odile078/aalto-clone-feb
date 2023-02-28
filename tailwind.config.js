@@ -20,9 +20,9 @@ module.exports = {
         },
         brandBlack: "#2d2d2d",
       },
-      // fontFamily: {
-      //   sans: ["var(--font-nimbus)", ...fontFamily.sans],
-      // },
+      fontFamily: {
+        sans: ["var(--font-nimbus)", ...fontFamily.sans],
+      },
     },
   },
   plugins: [],

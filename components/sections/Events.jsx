@@ -7,7 +7,7 @@ const Events = () => {
   return (
     <div className="bg-brandGray">
       <MainWrapper>
-        <div className="py-10 space-y-6">
+        <div className="pb-[9.6rem] pt-[5.6rem] space-y-6">
           <SectionHeader
             title="Join our many events"
             description="Find more current news and interesting events on the"
@@ -21,7 +21,7 @@ const Events = () => {
                   <Image
                     src={card1}
                     alt="card 1"
-                    className="object-cover object-center h-40"
+                    className="object-cover object-center w-full h-[195px] group-hover:opacity-70"
                   />
                 ),
                 title: "Shrinking from the heat",
@@ -35,7 +35,7 @@ const Events = () => {
                   <Image
                     src={card1}
                     alt="card 1"
-                    className="object-cover object-center h-40"
+                    className="object-cover object-center w-full h-[195px] group-hover:opacity-70"
                   />
                 ),
                 title: "Shrinking from the heat",
@@ -49,7 +49,7 @@ const Events = () => {
                   <Image
                     src={card1}
                     alt="card 1"
-                    className="object-cover object-center h-40"
+                    className="object-cover object-center w-full h-[195px] group-hover:opacity-70"
                   />
                 ),
                 title: "Shrinking from the heat",

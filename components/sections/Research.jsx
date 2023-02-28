@@ -8,19 +8,19 @@ const Research = () => {
   return (
     <div className="bg-brandGray">
       <MainWrapper>
-        <div className="py-10 space-y-6">
+        <div className="pb-[9.6rem] pt-[5.6rem] space-y-6">
           <SectionHeader
             title="Read about our research and donate"
             description="At Aalto University, we create the conditions for innovation, economic growth, employment and wellbeing. A gift to the university is an investment in a better future."
           />
-          <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+          <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
             {[
               {
                 img: (
                   <Image
                     src={research1}
                     alt="card 1"
-                    className="object-cover object-center h-40"
+                    className="object-cover object-center h-[298px] w-full group-hover:opacity-70"
                   />
                 ),
                 title: "Research & Art",
@@ -32,7 +32,7 @@ const Research = () => {
                   <Image
                     src={research2}
                     alt="card 1"
-                    className="object-cover object-center h-40"
+                    className="object-cover object-center h-[298px] w-full group-hover:opacity-70"
                   />
                 ),
                 title: "Research & Art",

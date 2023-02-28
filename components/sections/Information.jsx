@@ -7,7 +7,7 @@ import infomation2 from "../../public/images/information-2.jpeg";
 const Information = () => {
   return (
     <MainWrapper>
-      <div className="py-10 space-y-6">
+      <div className="py-[7.2rem] space-y-6">
         <SectionHeader title="Information on Ukraine and coronavirus" />
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
           {[
@@ -16,7 +16,7 @@ const Information = () => {
                 <Image
                   src={infomation1}
                   alt="card 1"
-                  className="order-last object-cover object-center h-40"
+                  className="order-last object-cover object-center min-h-[160px]  h-full group-hover:opacity-70"
                 />
               ),
               title: "Ukraine war",
@@ -27,7 +27,7 @@ const Information = () => {
                 <Image
                   src={infomation2}
                   alt="card 1"
-                  className="order-last object-cover object-center h-40"
+                  className="order-last object-cover min-h-[160px]  object-center h-full group-hover:opacity-70"
                 />
               ),
               title: "Information on coronavirus",

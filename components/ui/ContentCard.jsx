@@ -12,14 +12,20 @@ const ContentCard = ({
   // console.log(img, title, description, date, detail);
   return (
     <div
-      className={`${bordered ? " border border-black " : ""} ${
-        flexed ? " flex justify-between" : ""
-      }`}
+      className={` group cursor-pointer ${
+        bordered ? " border border-black " : ""
+      } ${flexed ? " flex justify-between" : ""}`}
     >
       {img}
-      <div className="p-4 space-y-4">
-        {title && <h5 className="text-base">{title}</h5>}
-        {description && <p className="text-sm">{description}</p>}
+      <div className="p-[2.4rem] space-y-4 bg-white self-end">
+        {title && (
+          <h5 className="text-[2.1rem] leading-[2.5rem] group-hover:bg-brandGray-light w-fit p-px">
+            {title}
+          </h5>
+        )}
+        {description && (
+          <p className="text-[1.8rem] leading-[2.5rem] ">{description}</p>
+        )}
         {date && (
           <div className="flex gap-1">
             <p className="pl-px border-r">{date}</p>

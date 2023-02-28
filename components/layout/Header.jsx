@@ -1,8 +1,7 @@
-import { IoLockClosedSharp } from "react-icons/io5";
 import { AiOutlineHeart, AiOutlineGlobal, AiOutlinePlus } from "react-icons/ai";
 import { MdClose, MdKeyboardArrowUp } from "react-icons/md";
 import { FiSearch } from "react-icons/fi";
-import { BiMenu } from "react-icons/bi";
+import { BiMenu, BiLockAlt } from "react-icons/bi";
 import { TfiMenuAlt } from "react-icons/tfi";
 import { FaGraduationCap } from "react-icons/fa";
 import { TbFilePencil } from "react-icons/tb";
@@ -63,8 +62,8 @@ const Header = () => {
                 href="/"
                 className="flex items-center gap-2 p-1 hover:bg-brandGray-light"
               >
-                <IoLockClosedSharp className="text-sm" />
-                <p className="text-base leading-[19px]">For personnel</p>
+                <BiLockAlt className="text-3xl" />
+                <p className="text-[1.6rem] leading-[1.9rem]">For personnel</p>
               </Link>
             </li>
             <li className="">
@@ -72,8 +71,8 @@ const Header = () => {
                 href="/"
                 className="flex items-center gap-2 p-1 hover:bg-brandGray-light"
               >
-                <AiOutlineHeart className="text-sm" />
-                <p className="text-base leading-[1.9rem]">Support us</p>
+                <AiOutlineHeart className="text-3xl" />
+                <p className="text-[1.6rem] leading-[1.9rem]">Support us</p>
               </Link>
             </li>
             <li className="h-[2.6rem] bg-black w-px"></li>
@@ -81,9 +80,9 @@ const Header = () => {
               <Link href="/" className="block p-1 hover:bg-brandGray-light">
                 {" "}
                 <div className="flex items-center gap-2 ">
-                  <AiOutlineGlobal />
-                  <p className="text-base leading-[1.9rem]">EN</p>
-                  <MdKeyboardArrowUp />
+                  <AiOutlineGlobal className="text-3xl" />
+                  <p className="text-[1.6rem] leading-[1.6rem]">EN</p>
+                  <MdKeyboardArrowUp className="text-3xl" />
                 </div>
               </Link>
             </li>
@@ -93,8 +92,8 @@ const Header = () => {
                 className="flex items-center gap-2 p-1 hover:bg-brandGray-light"
               >
                 {" "}
-                <FiSearch />
-                <p className="text-base leading-[1.9rem]">Search</p>
+                <FiSearch className="text-3xl" />
+                <p className="text-[1.6rem] leading-[1.9rem]">Search</p>
               </Link>
             </li>
             <li className="">
@@ -104,13 +103,13 @@ const Header = () => {
               >
                 {menuIsOpen ? (
                   <div>
-                    <MdClose />
+                    <MdClose className="text-3xl" />
                   </div>
                 ) : (
-                  <BiMenu />
+                  <BiMenu className="text-3xl" />
                 )}
 
-                <p className="text-base leading-[1.9rem]">
+                <p className="text-[1.6rem] leading-[1.9rem]">
                   {menuIsOpen ? "Close Menu" : "Menu"}
                 </p>
               </button>
@@ -118,7 +117,7 @@ const Header = () => {
             <li className="flex items-center gap-2">
               <Link
                 href="/"
-                className="block px-8 py-2 text-base leading-[1.8rem] text-white bg-black rounded-3xl hover:bg-yellow-300 hover:text-gray-900 "
+                className="block text-[1.6rem] leading-[1.8rem] px-[3.1rem] py-[1rem] text-white bg-black rounded-[2.9rem] hover:bg-yellow-300 hover:text-gray-900 "
               >
                 Login
               </Link>
@@ -182,7 +181,7 @@ const Header = () => {
                           className="border-b hover:bg-brandGray-light border-brandBlack "
                         >
                           <div className="flex justify-between py-4 h-fit ">
-                            <p className="text-[24px] leading-[30px] whitespace-nowrap font-semibold">
+                            <p className="text-[24px] leading-[30px] whitespace-nowrap ">
                               {" "}
                               {e}
                             </p>

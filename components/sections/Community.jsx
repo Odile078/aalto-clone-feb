@@ -5,11 +5,11 @@ import community2 from "../../public/images/community-2.jpeg";
 import community3 from "../../public/images/community-3.jpeg";
 const Community = () => {
   return (
-    <div className="mt-16 mb-6 space-y-10">
-      <h2 className="text-3xl font-semibold text-center">
-        important-quicklinks
+    <div className="mt-[7.2rem] mb-[7.2rem] space-y-10">
+      <h2 className="text-[2.8rem] leading-[3.3rem] text-center">
+        community-voices
       </h2>
-      <div className="flex flex-col gap-4 mx-3 md:px-16 max-w-7xl md:mx-auto sm:justify-between sm:flex-row sm:items-center">
+      <div className="flex flex-col gap-4 mx-[1.6rem] md:px-16 max-w-[154rem] md:mx-auto sm:justify-between sm:flex-row sm:items-center">
         {[
           {
             icon: (
@@ -46,7 +46,9 @@ const Community = () => {
             <div className="flex items-center gap-3">
               <div className="rounded-full ">{e.icon}</div>
 
-              <p className="text-base group-hover:bg-brandGray">{e.title}</p>
+              <p className="text-[2.1rem] leading-[2.5rem] group-hover:bg-brandGray">
+                {e.title}
+              </p>
             </div>
           </Link>
         ))}
