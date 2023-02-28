@@ -3,9 +3,12 @@ import { AiOutlineHeart, AiOutlineGlobal, AiOutlinePlus } from "react-icons/ai";
 import { MdClose, MdKeyboardArrowUp } from "react-icons/md";
 import { FiSearch } from "react-icons/fi";
 import { BiMenu } from "react-icons/bi";
+import { TfiMenuAlt } from "react-icons/tfi";
+import { FaGraduationCap } from "react-icons/fa";
+import { TbFilePencil } from "react-icons/tb";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { BsArrowRight } from "react-icons/bs";
+import { BsArrowRight, BsFillMenuButtonFill } from "react-icons/bs";
 import Image from "next/image";
 
 const Header = () => {
@@ -30,7 +33,7 @@ const Header = () => {
     <header className="">
       <div className="fixed z-30 flex justify-between w-full px-3 bg-white border-b border-black lg:px-20">
         <div
-          className={`space-y-px transition-all duration-300 group ${
+          className={`space-y-px transition-all duration-400 ease-in-out group ${
             pageIsScrolled ? "py-1" : "py-4"
           }`}
         >
@@ -138,26 +141,38 @@ const Header = () => {
       </div>
       {menuIsOpen ? (
         <section className="">
-          <div className="fixed top-0 right-0 z-10 grid w-screen h-screen mx-auto bg-black bg-opacity-50 m ">
+          <div className="fixed right-0 z-10 grid w-screen h-screen mx-auto bg-black bg-opacity-50 top-30 ">
             <div className="w-[80%] 2xl:w-[40%] bg-white right-0 fixed">
               <div className="relative h-screen overflow-y-auto">
-                {/* <div
-                  onClick={handleOpenMenu}
-                  className="bg-[#F2EFED] ml-auto p-5 cursor-pointer absolute top-0 right-0 group"
-                >
-                  <MdClose className="text-4xl duration-700 ease-in-out transform group-hover:rotate-180 rotate-icon " />
-                </div> */}
-                <div className="">
-                  <div className="flex flex-col justify-between cursor-pointer pt-52 px-36">
+                <div className="px-4 pt-40 space-y-6 sm:px-36">
+                  <div className="flex gap-4">
+                    <div className="flex flex-col items-center">
+                      <BsFillMenuButtonFill />
+                      <p className="text-base leading-[19px]">Services</p>
+                    </div>
+                    <div className="flex flex-col items-center">
+                      <TfiMenuAlt />
+                      <p className="text-base leading-[19px]">Site index</p>
+                    </div>
+                    <div className="flex flex-col items-center">
+                      <FaGraduationCap />
+                      <p className="text-base leading-[19px]">Student guide</p>
+                    </div>
+                    <div className="flex flex-col items-center">
+                      <TbFilePencil />
+                      <p className="text-base leading-[19px]">Apply to Aalto</p>
+                    </div>
+                  </div>
+                  <div className="flex flex-col justify-between cursor-pointer ">
                     {[
                       "Admissions and applying",
                       "News and events",
                       "Research and art",
-                      // "For students",
-                      // "Schools and departments",
-                      // "Tools",
-                      // "About us",
-                      // "Collaboration",
+                      "For students",
+                      "Schools and departments",
+                      "Tools",
+                      "About us",
+                      "Collaboration",
                       ,
                     ].map((e, i) => {
                       return (
@@ -187,5 +202,16 @@ const Header = () => {
     </header>
   );
 };
-
+// ${
+//   menuIsOpen
+//     ? "translate-x-[100vw] duration-1000"
+//     : "translate-x-[200vw] duration-700"
+// }
+// `}
+// >
+// <div
+//   className={`fixed right-0 z-10 grid w-screen h-screen mx-auto bg-black bg-opacity-50 top-30 duration-1000 delay-700 ease-in-out origin-right transform ${
+//     menuIsOpen ? "-translate-x-[100vw] " : "translate-x-[10vw]"
+//   } `}
+// >
 export default Header;

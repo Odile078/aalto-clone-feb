@@ -55,7 +55,7 @@ const SpotLight = () => {
               detail: "News",
             },
           ].map((e, i) => (
-            <ContentCard key={i} {...e} />
+            <ContentCard key={i} {...e} bordered={true} />
           ))}
         </div>
       </div>

@@ -34,7 +34,7 @@ const Information = () => {
               description: "Information on the effects of coronavirus...",
             },
           ].map((e, i) => (
-            <ContentCard key={i} {...e} flexed={true} />
+            <ContentCard key={i} {...e} flexed={true} bordered={true} />
           ))}
         </div>
       </div>

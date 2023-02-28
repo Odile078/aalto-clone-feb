@@ -5,11 +5,11 @@ import community2 from "../../public/images/community-2.jpeg";
 import community3 from "../../public/images/community-3.jpeg";
 const Community = () => {
   return (
-    <div className="mt-6 space-y-10">
+    <div className="mt-16 mb-6 space-y-10">
       <h2 className="text-3xl font-semibold text-center">
         important-quicklinks
       </h2>
-      <div className="flex flex-col mx-3 max-w-7xl md:mx-auto sm:justify-between sm:flex-row sm:items-center">
+      <div className="flex flex-col gap-4 mx-3 md:px-16 max-w-7xl md:mx-auto sm:justify-between sm:flex-row sm:items-center">
         {[
           {
             icon: (

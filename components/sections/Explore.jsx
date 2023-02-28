@@ -7,6 +7,7 @@ import { HiOutlinePhone } from "react-icons/hi";
 import SectionHeader from "../ui/SectionHeader";
 import ContentCard from "../ui/ContentCard";
 import exploreCard1 from "../../public/images/explore-1.jpeg";
+import lobbie2 from "../../public/images/explore-2.jpg";
 import lobbie from "../../public/images/lobbie.jpeg";
 import { BsArrowRight } from "react-icons/bs";
 import Community from "./Community";
@@ -16,11 +17,13 @@ const Explore = () => {
       <Image
         src={explore}
         alt="Explore background"
-        className="relative object-cover object-center w-screen max-h-96 -z-10"
+        className="relative object-cover object-center w-screen h-96 md:h-96 md:max-h-96 -z-10"
       />
       <MainWrapper>
-        <div className="-mt-20 bg-yellow-400 ">
-          <h1 className="p-10 text-6xl font-bold">Explore Aalto University</h1>
+        <div className="-mt-40 bg-yellow-400 ">
+          <h1 className="p-10 pb-16 text-6xl font-bold">
+            Explore Aalto University
+          </h1>
           <div className="grid grid-cols-1 border-t border-black md:grid-cols-3">
             {["Study at Aalto", "Open positions", "Contact us"].map((e, i) => (
               <div
@@ -41,7 +44,7 @@ const Explore = () => {
           <h2 className="text-3xl font-semibold text-center">
             important-quicklinks
           </h2>
-          <div className="flex flex-col max-w-2xl mx-3 md:mx-auto sm:justify-between sm:flex-row sm:items-center">
+          <div className="flex flex-col max-w-2xl gap-6 mx-3 md:mx-auto sm:justify-between sm:flex-row sm:items-center">
             {[
               { icon: <FaPen className="text-2xl" />, title: "For personnel" },
               {
@@ -118,7 +121,7 @@ const Explore = () => {
                 description: "The School of Arts, Design and Architecture...",
               },
             ].map((e, i) => (
-              <ContentCard key={i} {...e} flexed={true} />
+              <ContentCard key={i} {...e} flexed={true} bordered={true} />
             ))}
           </div>
         </div>
@@ -131,7 +134,7 @@ const Explore = () => {
                 alt="explore more"
               />
             </div>
-            <div className="space-y-6">
+            <div className="self-center space-y-6">
               <h3 className="text-3xl font-semibold">
                 campus-lively-and-thriving
               </h3>
@@ -158,7 +161,7 @@ const Explore = () => {
             </div>
           </div>
           <div className="grid grid-cols-1 gap-6 my-10 md:grid-cols-2">
-            <div className="space-y-6">
+            <div className="self-center space-y-6">
               <h3 className="text-3xl font-semibold">
                 Virtual Campus Experience
               </h3>
@@ -185,14 +188,14 @@ const Explore = () => {
             </div>
             <div>
               <Image
-                src={lobbie}
+                src={lobbie2}
                 className="object-cover object-center"
                 alt="explore more"
               />
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-1 gap-4 mt-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-4 mt-10 sm:grid-cols-2 lg:grid-cols-4">
           {[
             {
               img: (

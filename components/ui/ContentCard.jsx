@@ -7,11 +7,14 @@ const ContentCard = ({
   date,
   detail,
   flexed = false,
+  bordered = false,
 }) => {
-  console.log(img, title, description, date, detail);
+  // console.log(img, title, description, date, detail);
   return (
     <div
-      className={`border border-black ${flexed ? "flex justify-between" : ""}`}
+      className={`${bordered ? " border border-black " : ""} ${
+        flexed ? " flex justify-between" : ""
+      }`}
     >
       {img}
       <div className="p-4 space-y-4">
