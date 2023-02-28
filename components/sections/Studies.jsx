@@ -28,7 +28,7 @@ const Studies = () => {
                   <Image
                     src={study1}
                     alt="card 1"
-                    className="object-cover object-center w-full w-full h-[195px] group-hover:opacity-70"
+                    className="object-cover object-center w-full h-[195px] group-hover:opacity-70"
                   />
                 ),
                 title: "Lifewide Learning",

@@ -9,7 +9,7 @@ const Community = () => {
       <h2 className="text-[2.8rem] leading-[3.3rem] text-center">
         community-voices
       </h2>
-      <div className="flex flex-col gap-4 mx-[1.6rem] md:px-16 max-w-[154rem] md:mx-auto sm:justify-between sm:flex-row sm:items-center">
+      <div className="flex flex-col w-10/12 sm:w-full gap-4 px-[1.6rem] md:px-16 max-w-[154rem] mx-auto sm:justify-between sm:flex-row sm:items-center">
         {[
           {
             icon: (

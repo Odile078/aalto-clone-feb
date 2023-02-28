@@ -45,7 +45,7 @@ const Explore = () => {
           <h2 className="text-[2.8rem] leading-[3.3rem] text-center">
             important-quicklinks
           </h2>
-          <div className="flex flex-col gap-6 mx-[1.6rem] md:px-16 max-w-[154rem] md:mx-auto sm:justify-around sm:flex-row sm:items-center">
+          <div className="flex flex-col gap-6 w-10/12 sm:w-full px-[1.6rem] md:px-16 max-w-[154rem] mx-auto sm:justify-around sm:flex-row sm:items-center">
             {[
               {
                 icon: <TbPencil className="text-7xl" />,

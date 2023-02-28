@@ -11,7 +11,7 @@ const SectionHeader = ({ title, description, descriptionLink, action }) => {
           {descriptionLink && (
             <Link
               href="/"
-              className="inline-block underline bg-brandGray-light"
+              className="inline-block underline hover:bg-brandGray-light"
             >
               {descriptionLink}
             </Link>

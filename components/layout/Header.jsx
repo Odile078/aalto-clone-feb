@@ -2,12 +2,11 @@ import { AiOutlineHeart, AiOutlineGlobal, AiOutlinePlus } from "react-icons/ai";
 import { MdClose, MdKeyboardArrowUp } from "react-icons/md";
 import { FiSearch } from "react-icons/fi";
 import { BiMenu, BiLockAlt } from "react-icons/bi";
-import { TfiMenuAlt } from "react-icons/tfi";
 import { FaGraduationCap } from "react-icons/fa";
 import { TbFilePencil } from "react-icons/tb";
+import { BsFillMenuButtonFill } from "react-icons/bs";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { BsArrowRight, BsFillMenuButtonFill } from "react-icons/bs";
 import Image from "next/image";
 
 const Header = () => {
@@ -33,7 +32,7 @@ const Header = () => {
       <div className="fixed z-30 flex justify-between w-full px-3 bg-white border-b border-black lg:px-20">
         <div
           className={`space-y-px transition-all duration-400 ease-in-out group ${
-            pageIsScrolled ? "py-1" : "py-4"
+            pageIsScrolled ? "py-1 " : " sm:py-4"
           }`}
         >
           <Image
@@ -42,7 +41,7 @@ const Header = () => {
             src="/images/question-logo.png"
             alt="logo"
             className={`transition-all duration-300 group-hover:hidden ${
-              pageIsScrolled ? "h-8 w-10" : ""
+              pageIsScrolled ? "h-8 w-10" : " h-8 w-10 sm:h-auto sm:w-auto"
             }`}
           />
           <Image
@@ -51,7 +50,7 @@ const Header = () => {
             width={98}
             height={69}
             className={`transition-all duration-300 hidden group-hover:block ${
-              pageIsScrolled ? "h-8 w-10" : ""
+              pageIsScrolled ? "h-8 w-10" : "h-8 w-10 sm:h-auto sm:w-auto"
             }`}
           />
         </div>
@@ -140,27 +139,41 @@ const Header = () => {
       </div>
       {menuIsOpen ? (
         <section className="">
-          <div className="fixed right-0 z-10 grid w-screen h-screen mx-auto bg-black bg-opacity-50 top-30 ">
-            <div className="w-[80%] 2xl:w-[40%] bg-white right-0 fixed">
+          <div className="fixed right-0 z-10 grid w-screen h-screen mx-auto bg-black bg-opacity-70 top-30 ">
+            <div className="w-[80%] 3xl:w-[60%] 4xl:w-[45%] bg-white right-0 fixed">
               <div className="relative h-screen overflow-y-auto">
-                <div className="px-4 pt-40 space-y-6 sm:px-36">
-                  <div className="flex gap-4">
-                    <div className="flex flex-col items-center">
-                      <BsFillMenuButtonFill />
-                      <p className="text-base leading-[19px]">Services</p>
-                    </div>
-                    <div className="flex flex-col items-center">
-                      <TfiMenuAlt />
-                      <p className="text-base leading-[19px]">Site index</p>
-                    </div>
-                    <div className="flex flex-col items-center">
-                      <FaGraduationCap />
-                      <p className="text-base leading-[19px]">Student guide</p>
-                    </div>
-                    <div className="flex flex-col items-center">
-                      <TbFilePencil />
-                      <p className="text-base leading-[19px]">Apply to Aalto</p>
-                    </div>
+                <div className="px-4 space-y-6 pt-52 sm:px-36">
+                  <div className="flex items-center gap-4">
+                    {[
+                      {
+                        icon: <BsFillMenuButtonFill className="text-5xl" />,
+                        title: "Services",
+                      },
+                      {
+                        icon: <BsFillMenuButtonFill className="text-5xl" />,
+                        title: "Site index",
+                      },
+                      {
+                        icon: <FaGraduationCap className="text-5xl" />,
+                        title: "Student guide",
+                      },
+                      {
+                        icon: <TbFilePencil className="text-5xl" />,
+                        title: "Apply to Aalto",
+                      },
+                    ].map((e, i) => (
+                      <Link key={i} href={e?.title}>
+                        <div
+                          key={i}
+                          className="flex flex-col items-center w-[9.6rem]"
+                        >
+                          {e?.icon}
+                          <p className="text-[1.6rem] leading-[1.9rem] text-center">
+                            {e?.title}
+                          </p>
+                        </div>
+                      </Link>
+                    ))}
                   </div>
                   <div className="flex flex-col justify-between cursor-pointer ">
                     {[
@@ -175,20 +188,48 @@ const Header = () => {
                       ,
                     ].map((e, i) => {
                       return (
-                        <Link
+                        <details
                           key={i}
-                          href={e}
-                          className="border-b hover:bg-brandGray-light border-brandBlack "
+                          // href={e}
+                          className="block border-b border-brandBlack group "
                         >
-                          <div className="flex justify-between py-4 h-fit ">
+                          <summary className="flex items-center justify-between p-6 py-4 hover:bg-brandGray-light h-fit ">
                             <p className="text-[24px] leading-[30px] whitespace-nowrap ">
                               {" "}
                               {e}
                             </p>
 
-                            <AiOutlinePlus className="text-2xl" />
+                            <AiOutlinePlus className="text-3xl" />
+                          </summary>
+                          <div className="flex flex-wrap p-6 2xl:mr-40">
+                            {[
+                              "Apply to Aalto",
+                              "Find a study programme",
+                              "How to apply",
+                              "Scholarships and tuition fees",
+                              "Bachelor's admissions",
+                              "Master's admissions",
+                              "Doctoral admissions",
+                              "Campus life",
+                              "Events for applicants",
+                              "Chat with students",
+                              "Subscribe to newsletter",
+                              "Lifewide Learning",
+                              "Contact admission services",
+                              "Exchange students",
+                            ].map((e, i) => (
+                              <Link
+                                key={i}
+                                href={e}
+                                className="p-1 underline hover:bg-brandGray-light lg:w-[29rem]"
+                              >
+                                <p className="text-[1.8rem] leading-[2.2rem] tracking-[.015rem] py-[1.3rem] px-[1.6rem]">
+                                  {e}
+                                </p>
+                              </Link>
+                            ))}
                           </div>
-                        </Link>
+                        </details>
                       );
                     })}
                   </div>
@@ -201,16 +242,5 @@ const Header = () => {
     </header>
   );
 };
-// ${
-//   menuIsOpen
-//     ? "translate-x-[100vw] duration-1000"
-//     : "translate-x-[200vw] duration-700"
-// }
-// `}
-// >
-// <div
-//   className={`fixed right-0 z-10 grid w-screen h-screen mx-auto bg-black bg-opacity-50 top-30 duration-1000 delay-700 ease-in-out origin-right transform ${
-//     menuIsOpen ? "-translate-x-[100vw] " : "translate-x-[10vw]"
-//   } `}
-// >
+
 export default Header;

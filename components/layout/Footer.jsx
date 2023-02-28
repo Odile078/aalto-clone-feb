@@ -16,14 +16,9 @@ const Footer = () => {
   return (
     <footer className="py-10 border-t border-black">
       <MainWrapper>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
-          <div className="space-y-6">
+        <div className="grid grid-cols-1 gap-[2.8rem] sm:grid-cols-2 lg:grid-cols-4">
+          <div className="flex flex-col gap-[2.4rem]">
             <div className="py-0 space-y-2 transition-all duration-200 group">
-              {/* <p className="text-4xl group-hover:text-base">
-                A<span className="group-hover:hidden">?</span>
-                <span className="hidden group-hover:inline-block">&quot;</span>
-              </p>
-              <p className="text-xs ">Aalto university</p> */}
               <Image
                 width={98}
                 height={69}
@@ -71,7 +66,7 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div className="space-y-6">
+          <div className="flex flex-col gap-[2.4rem]">
             <div className="space-y-3">
               <h2 className="text-[2.1rem] leading-[2.5rem] ">Quicklinks</h2>
               <ul className="space-y-2">
@@ -112,7 +107,7 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div className="space-y-6">
+          <div className="flex flex-col gap-[2.4rem]">
             <div className="space-y-3">
               <h2 className="text-[2.1rem] leading-[2.5rem] ">Contacts</h2>
               <ul className="space-y-2">
@@ -150,7 +145,7 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div className="space-y-6">
+          <div className="flex flex-col gap-[2.4rem]">
             <SectionHeader
               title="Together towards a better world."
               description="Support new ideas, research, work and leadership development
@@ -160,8 +155,8 @@ const Footer = () => {
             <CustomLink secondary={true} text="Donate to Aalto University" />
           </div>
         </div>
-        <div className="flex flex-col gap-6 pt-6 mt-6 border-t border-t-black lg:flex-row lg:justify-between">
-          <ul className="flex flex-wrap gap-6">
+        <div className="flex flex-col gap-[4.8rem] pt-[2.4rem] mt-[2.4rem] border-t border-t-black lg:flex-row lg:justify-between">
+          <ul className="flex flex-col sm:flex-row flex-wrap gap-[2.4rem]">
             {[
               "Privacy notice",
               "Cookie policy",
@@ -179,7 +174,7 @@ const Footer = () => {
               </li>
             ))}
           </ul>
-          <ul className="flex flex-wrap gap-6">
+          <ul className="flex flex-col flex-wrap gap-[2.4rem] sm:flex-row">
             {["Suomeksi", "Svenska", "English"].map((e, i) => (
               <li key={i}>
                 <Link

@@ -23,6 +23,10 @@ module.exports = {
       fontFamily: {
         sans: ["var(--font-nimbus)", ...fontFamily.sans],
       },
+      screens: {
+        "3xl": "2500px",
+        "4xl": "2950px",
+      },
     },
   },
   plugins: [],
