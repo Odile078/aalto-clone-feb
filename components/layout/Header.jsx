@@ -1,10 +1,11 @@
 import { AiOutlineHeart, AiOutlineGlobal, AiOutlinePlus } from "react-icons/ai";
 import { MdClose, MdKeyboardArrowUp } from "react-icons/md";
 import { FiSearch } from "react-icons/fi";
-import { BiMenu, BiLockAlt } from "react-icons/bi";
+import { BiMenu, BiLockAlt, BiSearch } from "react-icons/bi";
 import { FaGraduationCap } from "react-icons/fa";
 import { TbFilePencil } from "react-icons/tb";
 import { BsFillMenuButtonFill } from "react-icons/bs";
+import { RxCross1 } from "react-icons/rx";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import Image from "next/image";
@@ -12,8 +13,10 @@ import Image from "next/image";
 const Header = () => {
   const [pageIsScrolled, setPageIsScrolled] = useState(false);
   const [menuIsOpen, setMenuIsOpen] = useState(false);
+  const [search, setSearch] = useState(false);
 
   const handleOpenMenu = () => setMenuIsOpen(!menuIsOpen);
+  const handleSearch = () => setSearch(!search);
   useEffect(() => {
     const resize = () => {
       window.pageYOffset > 300
@@ -24,15 +27,15 @@ const Header = () => {
   }, []);
 
   useEffect(() => {
-    document.body.style.overflow = menuIsOpen ? "hidden" : "auto";
+    document.body.style.overflow = menuIsOpen || search ? "hidden" : "auto";
     return () => (document.body.style.overflow = "scroll");
-  }, [menuIsOpen]);
+  }, [menuIsOpen, search]);
   return (
     <header className="">
       <div className="fixed z-30 flex justify-between w-full px-3 bg-white border-b border-black lg:px-20">
         <div
           className={`space-y-px transition-all duration-400 ease-in-out group ${
-            pageIsScrolled ? "py-1 " : " sm:py-4"
+            pageIsScrolled ? "py-1 " : " sm:pt-[2.3rem] sm:pb-[1.8rem]"
           }`}
         >
           <Image
@@ -86,14 +89,48 @@ const Header = () => {
               </Link>
             </li>
             <li className="">
-              <Link
-                href="/"
-                className="flex items-center gap-2 p-1 hover:bg-brandGray-light"
+              <div
+                className=""
+                // open={search && true}
               >
-                {" "}
-                <FiSearch className="text-3xl" />
-                <p className="text-[1.6rem] leading-[1.9rem]">Search</p>
-              </Link>
+                <button
+                  onClick={handleSearch}
+                  className="flex items-center gap-2 p-1 cursor-pointer hover:bg-brandGray-light"
+                >
+                  {" "}
+                  <FiSearch className="text-3xl" />
+                  <p className="text-[1.6rem] leading-[1.9rem]">Search</p>
+                </button>
+                <div
+                  className={`w-screen absolute mx-auto bg-black bg-opacity-80 h-screen transition-all ease-in-out duration-300 inset-x-0 top-0 z-[10000000] overflow-hidden gradient ${
+                    search ? " block" : "hidden"
+                  }`}
+                >
+                  <div className="py-10 bg-yellow-400">
+                    <div className="flex items-center justify-between w-full max-w-3xl pt-12 mx-auto">
+                      <p className="text-xl font-semibold">Search</p>
+                      <div className="flex justify-end ">
+                        <div className="p-5 bg-gray">
+                          <RxCross1
+                            className="self-end w-10 h-10 p-2 rounded-full cursor-pointer border-brandBlack hover:border"
+                            onClick={handleSearch}
+                          />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="h-6"></div>
+                    <div className="flex items-center justify-between max-w-4xl px-6 py-2 mx-auto bg-transparent border-2 rounded-full border-brandBlack">
+                      <input
+                        type=""
+                        placeholder=""
+                        className="bg-transparent outline-none"
+                      />
+                      <BiSearch size={25} />
+                    </div>
+                  </div>
+                </div>
+              </div>
             </li>
             <li className="">
               <button
